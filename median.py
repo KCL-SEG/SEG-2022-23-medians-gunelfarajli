@@ -8,12 +8,12 @@ while True:
         median = None
         numbers.sort()
         if len(numbers)%2==0:
-            median = [numbers[(len(numbers)//2) - 1], numbers[len(numbers)//2]]
+            median = numbers[(len(numbers)//2) - 1], numbers[len(numbers)//2]
         else:
-            median = [numbers[len(numbers)//2]]
+            median = numbers[len(numbers)//2]
 
     except ValueError:
         print("Some input could not be converted to a number!")
     else:
         break
-print(f'The median is: {median}')
+print(median)
